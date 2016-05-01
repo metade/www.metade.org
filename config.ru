@@ -11,3 +11,7 @@ FileUtils.mkdir('log') unless File.exist?('log')
 app = ::Middleman::Application.new
 
 run ::Middleman::Rack.new(app).to_app
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+end
