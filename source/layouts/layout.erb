@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Patrick Sinclair" %></title>
 
     <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
@@ -31,11 +30,12 @@
       <%= yield %>
     </div>
     <footer>
-      <div class="container">
+      <div class="container" itemscope itemtype="http://schema.org/Person">
+        <link itemprop="url" href="http://www.metade.org">
         <ul class="social-list">
-          <li><a class="twitter" href="http://twitter.com/metade" title="Twitter">Twitter</a></li>
-          <li><a class="github" href="https://github.com/metade" title="GitHub">GitHub</a></li>
-          <li><a class="linkedin" href="http://www.linkedin.com/in/metade">LinkedIn</a></li>
+          <li><a itemprop="sameAs" class="twitter" href="http://twitter.com/metade" title="Twitter">Twitter</a></li>
+          <li><a itemprop="sameAs" class="github" href="https://github.com/metade" title="GitHub">GitHub</a></li>
+          <li><a itemprop="sameAs" class="linkedin" href="http://www.linkedin.com/in/metade">LinkedIn</a></li>
           <li><a class="rss" href="http://feeds.feedburner.com/metade" title="RSS">RSS</a></li>
         </ul>
       </div>
