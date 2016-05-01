@@ -895,6 +895,14 @@ there.
   line-height: 6.5rem;
   color: #222; }
 
+.section-header {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.4rem; }
+
+.intro-header {
+  margin-top: .5rem; }
+
 .article-list {
   padding: 6rem 0; }
 
@@ -905,3 +913,33 @@ article h3 span {
   display: block; }
 article img {
   width: 100%; }
+
+footer {
+  display: block;
+  background: #eeeeee;
+  padding: 0 0 2rem; }
+
+footer .container {
+  padding-top: 1px; }
+
+.social-list {
+  list-style: none; }
+  .social-list li {
+    display: list-item; }
+  .social-list a {
+    display: block;
+    float: left;
+    height: 30px;
+    width: 30px;
+    text-indent: -99em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center; }
+    .social-list a.twitter {
+      background-image: url("/images/iconmonstr-twitter-4.svg"); }
+    .social-list a.github {
+      background-image: url("/images/iconmonstr-github-1.svg"); }
+    .social-list a.linkedin {
+      background-image: url("/images/iconmonstr-linkedin-4.svg"); }
+    .social-list a.rss {
+      background-image: url("/images/iconmonstr-rss-feed-4.svg"); }
