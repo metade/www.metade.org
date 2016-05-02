@@ -21,9 +21,11 @@
           <li class="navbar-item navbar-logo">
             <a class="navbar-link" href="/">Patrick Sinclair</a>
           </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="/blog/">blog</a>
-          </li>
+          <% if current_page.path =~ /^blog/ %>
+            <li class="navbar-item">
+              <a class="navbar-link" href="/blog/">blog</a>
+            </li>
+          <% end %>
         </ul>
       </div>
     </nav>
