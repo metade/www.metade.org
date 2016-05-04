@@ -31,6 +31,24 @@
         <div class="article-list">
     <article>
       <h3>
+        <a href="/blog/the-ups-and-downs-of-image-retrieval/">The Ups and Downs of Image Retrieval</a>
+        <span>May 28 2007</span>
+      </h3>
+      <p><p>Last week I gave a joint <a href="http://www.iam.ecs.soton.ac.uk/">IAM</a> seminar with <a href="http://users.ecs.soton.ac.uk/~jsh2/">Jon Hare</a>, as part of the <a href="http://www.iam.ecs.soton.ac.uk/seminars/">IAM 2006/2007</a> seminar series.</p>
+
+<p>The seminar was officially called "<a href="http://www.iam.ecs.soton.ac.uk/seminars/?action=viewpresentation&amp;presentation_id=159">Bridging the Semantic Gap in Multimedia Information Retrieval: Top-down and Bottom-up Approaches</a>", although we decided that what we really were talking about was "The Ups and Downs of Image Retrieval".</p>
+
+<p>It was basically a follow up on the <a href="http://eprints.ecs.soton.ac.uk/12737/">paper</a> we presented at the <a href="http://tev.itc.it/mtg.html">Mastering the Gap</a> workshop at the <a href="http://www.eswc2006.org/">European Semantic Web Conference</a> last year.</p>
+
+<p>We described the two basic approaches to image retrieval (semantic-based and content-based) and introduced the issue of the semantic gap in image retrieval, in particular by looking at the user requests to real picture libraries and archives. We then went to describe how semantic web techniques might be used to overcome some of the issues, although it's challenging when dealing with real archive data. Finally, Jon showed his amazing semantic space technique, which allows users to search collections of unannotated images using text keywords.</p>
+
+<p>The slides are available in <a href="http://users.ecs.soton.ac.uk/~pass/research/2007/seminar/seminar.pdf">PDF</a> (5.7M) and because of the movies/demos we used in the presentation as a Quicktime interactive movie in two sizes: <a href="http://users.ecs.soton.ac.uk/~pass/research/2007/seminar/seminar-large.mov">large</a> (118M) and <a href="http://users.ecs.soton.ac.uk/~pass/research/2007/seminar/seminar.mov">small</a> (13M).</p>
+
+<p>The seminar itself was recored and podcast on the IAM seminar feed, but I don't think it's visible outside of ECS. We'll try to get it put somewhere sensible soon.</p>
+</p>
+    </article>
+    <article>
+      <h3>
         <a href="/blog/hack-day/">Hack Day</a>
         <span>May 18 2007</span>
       </h3>
@@ -79,39 +97,6 @@
 <p>Also, if you need to write any code to generate RDF data, consider using <a href="http://www.w3.org/TR/rdf-testcases/#ntriples">NTriples</a>. Each triple goes on a separate line, so you don't need to worry about setting up the RDF/XML document structure correctly.</p>
 </p>
     </article>
-    <article>
-      <h3>
-        <a href="/blog/exposing-allegrograph-as-a-joseki-sparql-end-point/">Exposing AllegroGraph as a Joseki SPARQL end-point</a>
-        <span>April 18 2007</span>
-      </h3>
-      <p><p>Back when I was <a href="http://metade.org/research.html#Sculpteur">working</a> on the <a href="http://www.sculpteurweb.org">Sculpteur</a> project, we had real issues with semantic web triple store performance, in particular in regards to the amount of data they could handle.</p>
-
-<p>So we took a more traditional relational database/Z39.50 SRW approach, finally resulting in the <a href="http://openmks.sourceforge.net">OpenMKS</a> system.</p>
-
-<p>So it's great to see how far triple stores have come: the <a href="http://www.franz.com/products/allegrograph/">AllegroGraph</a> triple store server from <a href="http://www.franz.com/">Franz Inc.</a> can  handle billions of triples. They offer a free version that supports up to 50 million triples - that's a lot of data! For example, the <a href="http://e-culture.multimedian.nl/">E-Culture</a> demonstrator (part of the <a href="http://www.multimedian.nl">Multimedian</a> project in the Netherlands) incorporates a number of cultural heritage vocabularies/thesauri, Wordnet and three museum/archive collections and takes up only 9 million triples (according to this <a href="http://www.cs.vu.nl/~guus/papers/Schreiber06a.pdf">paper by Schreiber et al.</a>).</p>
-
-<p>So I've been experimenting with AllegroGraph, in particular so it can act as a back-end to an <a href="http://www.mspace.fm">mSpace</a> interface. Although AllegroGraph supports SPARQL queries, it doesn't expose an HTTP SPARQL endpoint (at least I couldn't find one!).</p>
-
-<p>Here's how I went about exposing AllegroGraph through a Joseki SPARQL endpoint. It's not the most efficient way of doing it, but it was the easiest to implement and it works!</p>
-
-<p>AllegroGraph provides a Jena layer, so inspired by the <a href="http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/">D2R server</a> code, I created a Jena Assembler for the AllegroGraph Jena graph. With this, you can then set up a Joseki data set:</p>
-
-<p><code>_:allegro   rdf:type ja:RDFDataset ;     rdfs:label "Allegro" ;     ja:defaultGraph        [ rdfs:label "Allegro Graph" ;         a ag:AllegroModel ; ag:modelName "test"; # the name of the AllegroGraph model name ag:modelLocation "/tmp/ag/"; # the location of the AllegroGraph model       ] ;       .  ag:AllegroModel     rdfs:subClassOf ja:Object;     ja:assembler "org.metade.allegrograph.AllegroGraphAssembler";     .</code></p>
-
-<p>I've assembled a <a title="AllegroGraph - Joseki bridge" href="http://metade.org/blog/wp-content/uploads/2007/04/allegrograph.zip">Maven project with the code which you can download</a>, maybe it'll be of use to someone. Give me a shout if you need help getting it going.</p>
-
-<p>Now I mentioned that this isn't the best approach. We've done some basic testing on it, and although it manages to cope with some complex queries far better than other systems we've tried, it can be slow on others. There is a lot of overhead in this approach. From the top of my head (i.e. this might not be very accurate!) each SPARQL query goes through:
--  Jena ARQ SPARQL library
--  Jena graph model
--  AllegroGraph Jena wrapper
--  AllegroGraph Java layer
--  AllegroGraph native store</p>
-
-<p>But it works…</p>
-
-<p>In terms of future work, AllegroGraph supports SPARQL queries directly so we're planning on developing the SPARQL endpoint that talks to this directly. It will be interesting to compare the two approaches, but my guess is that the direct SPARQL queries will be a lot faster.</p>
-</p>
-    </article>
 </div>
 
   <p>Page 8 of 9</p>
@@ -123,6 +108,10 @@
   <aside>
     <h2>Recent</h2>
     <ol>
+        <li>
+          <a href="/blog/young-rewired-state-2015/">Young Rewired State 2015</a>
+          <span>August  6 2015</span>
+        </li>
         <li>
           <a href="/blog/leaving-the-bbc/">Leaving the BBC</a>
           <span>January 14 2013</span>
@@ -159,10 +148,6 @@
           <a href="/blog/we-need-social-innovation-camp/">We Need @ Social Innovation Camp</a>
           <span>December  9 2008</span>
         </li>
-        <li>
-          <a href="/blog/my-take-on-regression-testing-css/">My take on regression testing CSS</a>
-          <span>November 15 2008</span>
-        </li>
     </ol>
 
     <h2>Tags</h2>
@@ -183,7 +168,7 @@
         <li><a href="/blog/tags/regression-testing/">regression testing (1)</a></li>
         <li><a href="/blog/tags/test-driven-development/">test driven development (1)</a></li>
         <li><a href="/blog/tags/sicamp/">sicamp (1)</a></li>
-        <li><a href="/blog/tags/youngrewiredstate/">youngrewiredstate (1)</a></li>
+        <li><a href="/blog/tags/youngrewiredstate/">youngrewiredstate (2)</a></li>
         <li><a href="/blog/tags/yrs2011/">yrs2011 (1)</a></li>
         <li><a href="/blog/tags/radio1/">radio1 (1)</a></li>
         <li><a href="/blog/tags/charity/">charity (1)</a></li>
@@ -196,6 +181,7 @@
 
     <h2>By Year</h2>
     <ol>
+        <li><a href="/blog/2015/">2015 (1)</a></li>
         <li><a href="/blog/2013/">2013 (1)</a></li>
         <li><a href="/blog/2012/">2012 (2)</a></li>
         <li><a href="/blog/2011/">2011 (5)</a></li>

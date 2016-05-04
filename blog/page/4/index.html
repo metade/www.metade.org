@@ -31,6 +31,26 @@
         <div class="article-list">
     <article>
       <h3>
+        <a href="/blog/we-need-social-innovation-camp/">We Need @ Social Innovation Camp</a>
+        <span>December  9 2008</span>
+      </h3>
+      <p><p>This weekend I attended <a href="http://www.sicamp.org/">Social Innovation Camp</a>, (SICamp) where I had an absolutely fantastic time! SICamp is an experiment to bring together people over a weekend and get them to build/prototype web apps that will drive social change - check out what the Guardian had to say about it on <a href="http://www.guardian.co.uk/media/pda/2008/dec/06/socialinnovationcamp-startups">Saturday</a> and then on <a href="http://www.guardian.co.uk/media/pda/2008/dec/07/socialinnovationcamp-events">Sunday after the projects were presented</a>.</p>
+
+<p>I worked on the <a href="http://www.we-need.org/">we-need.org</a> project, which was led by Craig Griffin from <a href="http://www.fresh-voice.com/">Fresh Voice</a>. The idea is to provide a web site where people with disabilities are able to express their needs through an accessible web interface rather than having their needs assessed by the system as it is currently (i.e. by filling in a 50-odd page form). The site would then aggregate and present interactive visualisations of the needs in a given community so they can be more efficiently handled. Hopefully the video of the pitch we presented on Sunday will be made available online soon, where our team explained the concept far better than I can!</p>
+
+<p>For the weekend, we built a Ruby on Rails application where users could use a <a href="http://metade.org/code/weneed/edit.html">basic html form</a> to express their needs. We also experimented with a graphical radial interface which is better suited for people with certain types of disabilities. We used the Geokit Rails plugin to geocode users' addresses so that their needs could be plotted on a map. We used <a href="http://simile.mit.edu/exhibit/">Simile Exhibit</a> to prototype the <a href="http://metade.org/code/weneed">visualisation of the aggregated needs of communities on a map</a>.</p>
+
+<p>As mentioned during the project presentation, we required some sample data so I put together some Ruby to randomly generate some users and their needs. So here is the infamous Ruby "random needs generator" one-liner:</p>
+
+<p><code>(0..rand(3)).to_a.map { |a| rand(@@need_count)+1 }.uniq</code></p>
+
+<p>I've bravely put all of the <a href="http://github.com/metade/weneed">we-need code on github</a>, but do keep in mind that it was all built in less than 24 hours!</p>
+
+<p>I had a really amazing time, worked with some fantastic people on We Need and also really enjoyed the post-SICamp discussions in the pub on Sunday! Big thanks to the <a href="http://www.sicamp.org/?page_id=158">SICamp team</a> for organising everything - I'm already looking forward to the next SICamp meetup!</p>
+</p>
+    </article>
+    <article>
+      <h3>
         <a href="/blog/my-take-on-regression-testing-css/">My take on regression testing CSS</a>
         <span>November 15 2008</span>
       </h3>
@@ -81,20 +101,6 @@
 <script src="http://gist.github.com/20069.js"></script></p>
 </p>
     </article>
-    <article>
-      <h3>
-        <a href="/blog/bbc-musicmusicbrainz-bookmarklet/">BBC Music/MusicBrainz bookmarklet</a>
-        <span>July 30 2008</span>
-      </h3>
-      <p><p>At BBC Audio and Music Interactive, I'm one of the software engineers working on the <a href="http://www.bbc.co.uk/music/developers/are">BBC Music Discovery team</a>. This week we <a href="http://www.bbc.co.uk/blogs/bbcinternet/2008/07/bbc_music_artist_pages_beta.html">launched</a> the <a href="http://www.bbc.co.uk/music/beta/">BBC Music Beta</a>, which focuses in particular on publishing information about the artists broadcast on the BBC. You can read more about the site on <a href="http://derivadow.com/2008/07/28/the-all-new-bbc-music-site-where-programmes-meet-music-and-the-semantic-web/">Tom Scott's blog</a> and <a href="http://www.bbc.co.uk/blogs/radiolabs/2008/07/music_beta_and_linked_data.shtml">BBC Radio Labs</a>.</p>
-
-<p>Matthew Shorter describes at the <a href="http://www.bbc.co.uk/blogs/bbcinternet/matthew_shorter/">bottom of his post</a> how to use MusicBrainz to find a given artist. Here's a little something to make that a touch easier: a BBC Music/MusicBrainz <a href="http://en.wikipedia.org/wiki/Bookmarklet">bookmarklet</a>!</p>
-
-<p>Drag this <a href="">BBC Music/MusicBrainz</a> link to your bookmarks bar in your browser. Now, when you're on an artist page (e.g. <a href="http://www.bbc.co.uk/music/artists/cc197bad-dc9c-440d-a5b5-d52ba2e14234">Coldplay</a>) click on the bookmarklet to switch between BBC Music and MusicBrainz artist page.</p>
-
-<p>Enjoy!</p>
-</p>
-    </article>
 </div>
 
   <p>Page 4 of 9</p>
@@ -106,6 +112,10 @@
   <aside>
     <h2>Recent</h2>
     <ol>
+        <li>
+          <a href="/blog/young-rewired-state-2015/">Young Rewired State 2015</a>
+          <span>August  6 2015</span>
+        </li>
         <li>
           <a href="/blog/leaving-the-bbc/">Leaving the BBC</a>
           <span>January 14 2013</span>
@@ -142,10 +152,6 @@
           <a href="/blog/we-need-social-innovation-camp/">We Need @ Social Innovation Camp</a>
           <span>December  9 2008</span>
         </li>
-        <li>
-          <a href="/blog/my-take-on-regression-testing-css/">My take on regression testing CSS</a>
-          <span>November 15 2008</span>
-        </li>
     </ol>
 
     <h2>Tags</h2>
@@ -166,7 +172,7 @@
         <li><a href="/blog/tags/regression-testing/">regression testing (1)</a></li>
         <li><a href="/blog/tags/test-driven-development/">test driven development (1)</a></li>
         <li><a href="/blog/tags/sicamp/">sicamp (1)</a></li>
-        <li><a href="/blog/tags/youngrewiredstate/">youngrewiredstate (1)</a></li>
+        <li><a href="/blog/tags/youngrewiredstate/">youngrewiredstate (2)</a></li>
         <li><a href="/blog/tags/yrs2011/">yrs2011 (1)</a></li>
         <li><a href="/blog/tags/radio1/">radio1 (1)</a></li>
         <li><a href="/blog/tags/charity/">charity (1)</a></li>
@@ -179,6 +185,7 @@
 
     <h2>By Year</h2>
     <ol>
+        <li><a href="/blog/2015/">2015 (1)</a></li>
         <li><a href="/blog/2013/">2013 (1)</a></li>
         <li><a href="/blog/2012/">2012 (2)</a></li>
         <li><a href="/blog/2011/">2011 (5)</a></li>

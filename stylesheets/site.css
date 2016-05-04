@@ -943,3 +943,12 @@ footer .container {
       background-image: url("/images/iconmonstr-linkedin-4.svg"); }
     .social-list a.rss {
       background-image: url("/images/iconmonstr-rss-feed-4.svg"); }
+
+.youtube {
+  width: 100%; }
+  @media (max-width: 750px) {
+    .youtube {
+      height: 300px; } }
+  @media (min-width: 750px) {
+    .youtube {
+      height: 500px; } }
