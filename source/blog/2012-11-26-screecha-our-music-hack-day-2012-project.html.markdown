@@ -14,10 +14,8 @@ tags:
 
 Last weekend I participated in another [Music Hack Day](http://london.musichackday.org/2012/index.php?page=Main+page).
 
-I managed to convince my girlfriend, the brilliant [Kirsten Fletcher](http://www.kirstenfletcher.com/), to join me. Kirsten is a freelance costume designer-maker, who is more used to working on theatre and movie productions than hack days.
+I managed to convince [Kirsten Fletcher](http://www.kirstenfletcher.com/), to join me. Kirsten is a freelance costume designer-maker, who is more used to working on theatre and movie productions than hack days.
 ## Screecha
-
-![Screecha - our Music Hack Day 2012 project](/blog/images/screecha.jpeg)
 
 Together we made [Screecha: an interactive musical toy aimed at children](https://www.hackerleague.org/hackathons/music-hack-day-london/hacks/screecha). It’s a puppet that can house a smart phone in it’s belly and an app to go with it.
 
