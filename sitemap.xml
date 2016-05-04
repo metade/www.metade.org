@@ -176,6 +176,46 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://www.metade.org/blog/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/archives/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/2007/04/18/exposing-allegrograph-as-a-joseki-sparql-end-point/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/2007/05/12/semantic-web-resources-and-tools-for-cultural-heritage/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/2008/05/11/augmented-reality-from-bbc-radio-1-band-in-your-hand/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/2008/06/23/my-mashed-2008-hack-recommending-bbc-radio-shows-and-artists/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/2008/07/30/bbc-musicmusicbrainz-bookmarklet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/2008/11/15/my-take-on-regression-testing-css/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://www.metade.org/blog/tags/code/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
