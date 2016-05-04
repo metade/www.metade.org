@@ -69,3 +69,12 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+redirect "blog/about/index.html", to: "/"
+redirect "blog/archives/index.html", to: "/blog/"
+redirect "blog/2007/04/18/exposing-allegrograph-as-a-joseki-sparql-end-point/index.html", to: "/blog/exposing-allegrograph-as-a-joseki-sparql-end-point/"
+redirect "blog/2007/05/12/semantic-web-resources-and-tools-for-cultural-heritage/index.html", to: "/blog/semantic-web-resources-and-tools-for-cultural-heritage/"
+redirect "blog/2008/05/11/augmented-reality-from-bbc-radio-1-band-in-your-hand/index.html", to: "/blog/augmented-reality-from-bbc-radio-1-band-in-your-hand/"
+redirect "blog/2008/06/23/my-mashed-2008-hack-recommending-bbc-radio-shows-and-artists/index.html", to: "/blog/my-mashed-2008-hack-recommending-bbc-radio-shows-and-artists/"
+redirect "blog/2008/07/30/bbc-musicmusicbrainz-bookmarklet/index.html", to: "/blog/bbc-musicmusicbrainz-bookmarklet/"
+redirect "blog/2008/11/15/my-take-on-regression-testing-css/index.html", to: "/blog/my-take-on-regression-testing-css/"
