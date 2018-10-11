@@ -911,7 +911,7 @@ body > .container {
   font-size: 1.4rem; }
 
 .intro-header {
-  margin-top: .5rem; }
+  margin-top: 1rem; }
 
 .article-list {
   padding: 6rem 0; }
@@ -927,7 +927,7 @@ article img {
 footer {
   display: block;
   background: #eeeeee;
-  padding: 0 0 2rem; }
+  padding: 0 0 1rem; }
 
 footer .container {
   padding-top: 1px; }
