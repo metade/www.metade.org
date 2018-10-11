@@ -1,142 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.metade.org/blog/my-first-post/</loc>
+    <loc>http://www.metade.org/research/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.metade.org/blog/exposing-allegrograph-as-a-joseki-sparql-end-point/</loc>
+    <loc>http://www.metade.org/research/phd/artoolkit/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.metade.org/blog/semantic-web-resources-and-tools-for-cultural-heritage/</loc>
+    <loc>http://www.metade.org/research/phd/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.metade.org/blog/hack-day/</loc>
+    <loc>http://www.metade.org/research/phd/images/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.metade.org/blog/the-ups-and-downs-of-image-retrieval/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/longhoughton-to-edinburgh-in-7-minutes/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/the-semantic-web-a-medical-perspective/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/fun-augmented-reality-stuff/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/every-day-should-be-hack-day/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/leaving-southampton/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/augmented-reality-from-bbc-radio-1-band-in-your-hand/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/my-mashed-2008-hack-recommending-bbc-radio-shows-and-artists/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/improving-music-recommendations-step-one-ignoring-bad-data/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/bbc-musicmusicbrainz-bookmarklet/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/from-the-international-semantic-web-conference-2008/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/my-take-on-regression-testing-css/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/we-need-social-innovation-camp/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/im-at-the-guardian-south-by-south-west-hack-d/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/my-saidfm-radio-box-hack/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/its-been-a-while/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/young-rewired-state-2011/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/the-new-radio-1-and-1xtra-homepages/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/buy-a-brick/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/screecha-our-music-hack-day-2012-project/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/leaving-the-bbc/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/young-rewired-state-2015/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/</loc>
+    <loc>http://www.metade.org/research/phd/hypermedia/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -151,27 +36,137 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.metade.org/research/</loc>
+    <loc>http://www.metade.org/blog/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.metade.org/research/phd/artoolkit/</loc>
+    <loc>http://www.metade.org/blog/young-rewired-state-2015/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.metade.org/research/phd/hypermedia/</loc>
+    <loc>http://www.metade.org/blog/improving-music-recommendations-step-one-ignoring-bad-data/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.metade.org/research/phd/images/</loc>
+    <loc>http://www.metade.org/blog/semantic-web-resources-and-tools-for-cultural-heritage/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.metade.org/research/phd/</loc>
+    <loc>http://www.metade.org/blog/screecha-our-music-hack-day-2012-project/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/the-ups-and-downs-of-image-retrieval/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/its-been-a-while/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/my-first-post/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/my-take-on-regression-testing-css/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/the-new-radio-1-and-1xtra-homepages/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/fun-augmented-reality-stuff/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/every-day-should-be-hack-day/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/the-semantic-web-a-medical-perspective/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/longhoughton-to-edinburgh-in-7-minutes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/my-saidfm-radio-box-hack/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/augmented-reality-from-bbc-radio-1-band-in-your-hand/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/bbc-musicmusicbrainz-bookmarklet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/we-need-social-innovation-camp/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/exposing-allegrograph-as-a-joseki-sparql-end-point/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/im-at-the-guardian-south-by-south-west-hack-d/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/leaving-southampton/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/buy-a-brick/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/my-mashed-2008-hack-recommending-bbc-radio-shows-and-artists/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/leaving-the-bbc/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/from-the-international-semantic-web-conference-2008/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/young-rewired-state-2011/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/hack-day/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -216,37 +211,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.metade.org/blog/tags/code/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/semweb/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/sparql/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/image-retrieval/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/presentation/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/hackdaylondon/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/augmented-reality/</loc>
+    <loc>http://www.metade.org/blog/tags/youngrewiredstate/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
   </url>
@@ -256,67 +221,7 @@
     <priority>0.1</priority>
   </url>
   <url>
-    <loc>http://www.metade.org/blog/tags/mashed2008/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/musicbrainz/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
     <loc>http://www.metade.org/blog/tags/music/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/iswc2008/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/css/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/regression-testing/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/test-driven-development/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/sicamp/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/youngrewiredstate/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/yrs2011/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/radio1/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/charity/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>http://www.metade.org/blog/tags/childsi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
   </url>
@@ -337,6 +242,96 @@
   </url>
   <url>
     <loc>http://www.metade.org/blog/tags/spotify/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/charity/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/childsi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/musicbrainz/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/radio1/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/code/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/yrs2011/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/sicamp/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/css/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/regression-testing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/test-driven-development/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/iswc2008/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/mashed2008/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/augmented-reality/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/hackdaylondon/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/presentation/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/semweb/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/image-retrieval/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>http://www.metade.org/blog/tags/sparql/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
   </url>

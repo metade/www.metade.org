@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/blog/young-rewired-state-2015/"/>
     <id>http://blog.url.com/blog/young-rewired-state-2015/</id>
     <published>2015-08-06T01:00:00+01:00</published>
-    <updated>2016-07-17T18:41:34+01:00</updated>
+    <updated>2018-10-11T20:24:53+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -33,7 +33,7 @@
     <link rel="alternate" href="http://blog.url.com/blog/leaving-the-bbc/"/>
     <id>http://blog.url.com/blog/leaving-the-bbc/</id>
     <published>2013-01-14T09:00:00+00:00</published>
-    <updated>2016-07-17T18:41:34+01:00</updated>
+    <updated>2018-10-11T20:24:53+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -63,7 +63,7 @@
     <link rel="alternate" href="http://blog.url.com/blog/screecha-our-music-hack-day-2012-project/"/>
     <id>http://blog.url.com/blog/screecha-our-music-hack-day-2012-project/</id>
     <published>2012-11-26T00:00:00+00:00</published>
-    <updated>2016-07-17T18:41:34+01:00</updated>
+    <updated>2018-10-11T20:24:53+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -88,20 +88,20 @@
 &lt;p&gt;We then started looking on other music services for children’s songs and came across a recording of a toddler singing &lt;a href="https://soundcloud.com/micheletharp/twinkle-twinkle-little-star"&gt;“Twinkle, Twinkle Little Star” on SoundCloud&lt;/a&gt;. That’s when we decided that the ability of recording and saving children’s performances would add an interesting angle to the hack.
 ## Hacking with a sewing machine&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Screecha - our Music Hack Day 2012 project" src="/blog/images/sewing_machine.jpeg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/images/sewing_machine.jpeg" alt="Screecha - our Music Hack Day 2012 project" /&gt;&lt;/p&gt;
 
 &lt;p&gt;While I was was doing the usual coding activities involved in a hack day (basically throwing code together until it worked), Kirsten designed and built the puppet from scratch.&lt;/p&gt;
 
 &lt;p&gt;This obviously required a fair bit of planning and organisation upfront. She had to have an idea of what the puppet would look like in order to select which materials she’d need to bring to the hack day. She had to bring in her sewing machine (the first sewing machine at a Music Hack Day!) and a big bag of fabric as well as the other tools required to make the puppet.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Screecha - our Music Hack Day 2012 project" src="/blog/images/pattern_cutting.jpeg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/images/pattern_cutting.jpeg" alt="Screecha - our Music Hack Day 2012 project" /&gt;&lt;/p&gt;
 
 &lt;p&gt;It was really interesting to see the process that she took. Based on a simple sketch for the design, she created a pattern: a paper template from which she made the preliminary shape for the puppet. After some tweaking, she adjusted the pattern and cut the fabric for the final puppet prototype. Then it was a matter of sewing it all together and finishing it off.&lt;/p&gt;
 
 &lt;p&gt;It really made me appreciate how lucky software and web developers have it: all we need is a laptop and internet connection and we’re effectively limited by our imagination and ability.
 ## Hacking with iOS&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Screecha - our Music Hack Day 2012 project" src="/blog/images/screecha_sceenshot.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/images/screecha_sceenshot.jpg" alt="Screecha - our Music Hack Day 2012 project" /&gt;&lt;/p&gt;
 
 &lt;p&gt;The Screecha app was actually the first time I developed a native iOS application. It was implemented using PhoneGap, so most of the user interface was developed using HTML/CSS/Javascript and Twitter Bootstrap. However, I did have to integrate &lt;a href="https://github.com/spotify/cocoalibspotify"&gt;cocoalibspotify&lt;/a&gt; so I did get to tinker about with some Objective C.&lt;/p&gt;
 
@@ -122,11 +122,11 @@
     <link rel="alternate" href="http://blog.url.com/blog/buy-a-brick/"/>
     <id>http://blog.url.com/blog/buy-a-brick/</id>
     <published>2012-03-03T00:00:00+00:00</published>
-    <updated>2016-07-17T18:41:34+01:00</updated>
+    <updated>2018-10-11T20:24:53+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="Buy a brick " src="/blog/images/buyabrick.png" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src="/blog/images/buyabrick.png" alt="Buy a brick " /&gt;&lt;/p&gt;
 
 &lt;p&gt;A couple of years ago I helped develop a fundraising application for the &lt;a href="http://www.childsifoundation.org/"&gt;Child’s i Foundation&lt;/a&gt;, a charity and worldwide community aiming to build a home for abandoned babies in Uganda.&lt;/p&gt;
 
@@ -148,7 +148,7 @@
     <link rel="alternate" href="http://blog.url.com/blog/the-new-radio-1-and-1xtra-homepages/"/>
     <id>http://blog.url.com/blog/the-new-radio-1-and-1xtra-homepages/</id>
     <published>2011-10-05T01:00:00+01:00</published>
-    <updated>2016-07-17T18:41:34+01:00</updated>
+    <updated>2018-10-11T20:24:53+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -160,15 +160,15 @@
 
 &lt;p&gt;I was on attachment with the Radio 1 and 1Xtra Interactive team when the design was conceived, and although the site was built by the &lt;a href="http://www.madebykite.com"&gt;fantastic team at Kite&lt;/a&gt; I’ve been heavily involved throughout it’s development.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="The new BBC Radio 1 and 1Xtra homepages" src="/blog/images/BBC_-_Radio_1_20110930.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/images/BBC_-_Radio_1_20110930.png" alt="The new BBC Radio 1 and 1Xtra homepages" /&gt;&lt;/p&gt;
 
 &lt;p&gt;I might be a bit biased, but I think it’s pretty special! What I’m most happy with is how we’re pushing content to the page using &lt;a href="http://www.bbc.co.uk/blogs/radiolabs/2009/11/pushfeeds.shtml"&gt;BBC PushFeeds&lt;/a&gt; (i.e. &lt;a href="http://xmpp.org/about-xmpp/technology-overview/pubsub/"&gt;XMPP PubSub&lt;/a&gt; over &lt;a href="http://en.wikipedia.org/wiki/WebSocket"&gt;Websockets&lt;/a&gt; or Flash as a fallback) to enable the live experience. On top of that, we’ve delivered an admin system that allows producers to promote content to the homepages within seconds.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="The new BBC Radio 1 and 1Xtra homepages" src="/blog/images/BBC_-_Radio_1Xtra_20111005.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/images/BBC_-_Radio_1Xtra_20111005.png" alt="The new BBC Radio 1 and 1Xtra homepages" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Track now playing information has been present on the BBC national radio networks sites for a number of years, but in the new homepage they are put into the spotlight. The beautiful packshots (album art) are mainly taken from the Radio 1/1Xtra charts and playlists.  Using &lt;a href="http://musicbrainz.org/"&gt;MusicBrainz&lt;/a&gt; identifiers we’re able to surface content from &lt;a href="http://www.bbc.co.uk/music"&gt;BBC Music&lt;/a&gt;, including artist biography, latest clips and album reviews.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="The new BBC Radio 1 and 1Xtra homepages" src="/blog/images/image003_570.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/images/image003_570.jpg" alt="The new BBC Radio 1 and 1Xtra homepages" /&gt;&lt;/p&gt;
 
 &lt;p&gt;I believe this reinvents the way the stations present themselves online, and potentially on air. Whenever something happens in the studio, it’s on the website in seconds in the form of an update, photo or live video stream. The audience’s reaction to the show can be surfaced online in the form of their texts, tweets or Facebook comments.&lt;/p&gt;
 
@@ -180,7 +180,7 @@
     <link rel="alternate" href="http://blog.url.com/blog/young-rewired-state-2011/"/>
     <id>http://blog.url.com/blog/young-rewired-state-2011/</id>
     <published>2011-08-25T01:00:00+01:00</published>
-    <updated>2016-07-17T18:41:34+01:00</updated>
+    <updated>2018-10-11T20:24:53+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -190,13 +190,13 @@
 
 &lt;p&gt;The team built &lt;a href="http://youngrewiredstate.org/projects/unimatch/"&gt;UniMatch&lt;/a&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Young Rewired State 2011" src="/blog/images/unimatch.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/images/unimatch.png" alt="Young Rewired State 2011" /&gt;&lt;/p&gt;
 
 &lt;p&gt;There’s a live demonstration available at &lt;a href="http://unimatch.net/"&gt;http://unimatch.net/&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I was really impressed by the &lt;a href="http://twitter.com/yrsblackfriars"&gt;Fluxx Capacitors&lt;/a&gt; team. I loved the way they came up with ideas during the brainstorming sessions - there was some really great things coming out of it. Coding wise, there was a wide range of abilities, from those who had been programming for years (i.e. since they were 10), some of them had tinkered with some HTML and CSS and others who hadn’t coded at all but were keen to learn. The more experienced ended up doing the heavy lifting on the server side and more advanced Javascript front end work, and the rest of them worked on designing the UI and then implementing the design and HTML/CSS.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Young Rewired State 2011" src="/blog/images/photo.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/images/photo.JPG" alt="Young Rewired State 2011" /&gt;&lt;/p&gt;
 
 &lt;p&gt;There were some really ingenious approaches to working collaboratively too. When they started editing the code on a shared server space, they used a system consisting of wooden blocks for each of the components (e.g. HTML, CSS, database and server code) to prevent multiple people editing the same file at the same time.&lt;/p&gt;
 
