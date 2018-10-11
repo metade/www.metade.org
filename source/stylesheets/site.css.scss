@@ -2,15 +2,26 @@
 @import "normalize";
 @import "skeleton";
 
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+body > .container {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
 .container {
   max-width: 800px;
 }
 
 .navbar {
   border-bottom: 1px solid #eee;
-}
-.navbar > .container {
-  width: 100%;
 }
 .navbar-list {
   list-style: none;
