@@ -1,6 +1,6 @@
 Experience
 2016-current — CTO GoodGym
-I have led the small technology team at GoodGym, a community of runners that get fit by doing good. The GoodGym platform now supports nearly 50 locations, over 10,000 runners and who have collectively completed 100,000 good deeds - which has been achieved without having to scale the operations team significantly.
+I have led the small technology team at GoodGym, a charity that connects community of runners that get fit by doing good. The GoodGym platform now supports nearly 50 locations, over 10,000 runners and who have collectively completed 100,000 good deeds - which has been achieved without having to scale the operations team significantly.
 2014-2016 — Technical Lead Lostmy.name (now Wonderbly)
 At Lostmy.name I was heavily involved in the e-commerce platform that sold over 1.5 million books in 2 years. I helped grow the engineering team to over 20 developers, and led the e-commerce team.
 2013-2014 — Technical Lead Sidekick Studios
@@ -19,8 +19,13 @@ Education
 1999-2004 — Ph.D. Computer Science University of Southampton
 Integrating Hypermedia Techniques with Augmented Reality Environments My research focused on incorporating open hypermedia techniques in augmented reality environments, and developing tangible augmented reality interaction metaphors for navigating complex information spaces in a natural and intuitive way.
 1996-1999 — B.Sc. Computer Science [2.1] University of Southampton
-
 Technical Skills
-Programming Ruby, Ruby on Rails, Sinatra
+Programming Ruby, Ruby on Rails, Sinatra TDD, Rspec, Cucumber
 Web Development and Web Services HTML/CSS/Javascript APIs/REST web services
 Misc Heroku Postgres, MySQL, MongoDB Message queuing technologies (Sidekiq, ActiveMQ) Experience using Unix (OS X, Linux) Source control using Git and Subversion
+Volunteering and mentoring activities
+GoodGym As a GoodGym runner with GoodGym, I have clocked up nearly 200 good deeds 
+Bethnal Green Ventures Mentor with the social innovation startup accelerator Bethnal Green Ventures
+Young Rewired State’s Festival of Code Mentor at Young Rewired State’s Festival of Code, a hackathon aimed at under-18s
+Other Interests
+Running	— I have participated in many races, ranging from 5km to a 50 miles ultra marathon Cycling	— A regular cyclist, I have cycled across Britain and done a few triathlons Samba	— I perform with the London School of Samba at events like Notting Hill Carnival
