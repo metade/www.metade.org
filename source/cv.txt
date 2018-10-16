@@ -1,0 +1,26 @@
+Experience
+2016-current — CTO GoodGym
+I have led the small technology team at GoodGym, a community of runners that get fit by doing good. The GoodGym platform now supports nearly 50 locations, over 10,000 runners and who have collectively completed 100,000 good deeds - which has been achieved without having to scale the operations team significantly.
+2014-2016 — Technical Lead Lostmy.name (now Wonderbly)
+At Lostmy.name I was heavily involved in the e-commerce platform that sold over 1.5 million books in 2 years. I helped grow the engineering team to over 20 developers, and led the e-commerce team.
+2013-2014 — Technical Lead Sidekick Studios
+Technical lead on several client projects, including Which? Birth Choice.
+2012-2013 — Principal S/W Engineer BBC FM Programmes & On Demand, Radio & Music
+Technical lead on one of the iPlayer Radio development teams. Lead developer on several projects including Music Events sites (e.g. Glastonbury). 
+2011 — Senior Software Engineer BBC FM Programmes & On Demand, Radio & Music
+Senior developer on the Radio & Music product working on the Radio Beta as well as overseeing development of the Radio 1/1Xtra homepage project.
+2010-2011 — Content Producer BBC Radio 1/1Xtra Interactive
+On attachment as a content producer with the Radio 1/1Xtra website editorial team, working on Chart & Playlist, Live Lounge and Specialist Sessions and mobile webapp.  
+2007-2010 — Software Engineer BBC Audio and Music Interactive
+Core member of the BBC Music Discovery team where I helped deliver the BBC Music proposition around artist pages, album reviews and clickable tracklists with audio previews.
+2003-2007 — Research Assistant/Fellow University of Southampton
+As a researcher, I worked on a number of EU and JISC funded research projects that used semantic web technologies to integrate cultural heritage institutions’ multimedia collections.
+Education
+1999-2004 — Ph.D. Computer Science University of Southampton
+Integrating Hypermedia Techniques with Augmented Reality Environments My research focused on incorporating open hypermedia techniques in augmented reality environments, and developing tangible augmented reality interaction metaphors for navigating complex information spaces in a natural and intuitive way.
+1996-1999 — B.Sc. Computer Science [2.1] University of Southampton
+
+Technical Skills
+Programming Ruby, Ruby on Rails, Sinatra
+Web Development and Web Services HTML/CSS/Javascript APIs/REST web services
+Misc Heroku Postgres, MySQL, MongoDB Message queuing technologies (Sidekiq, ActiveMQ) Experience using Unix (OS X, Linux) Source control using Git and Subversion
