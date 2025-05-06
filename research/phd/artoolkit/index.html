@@ -1,0 +1,174 @@
+<HTML>
+<HEAD>
+	<TITLE>Patrick Sinclair - IAM, ECS, University of Southampton </TITLE>
+	<STYLE TYPE="text/css">
+		P { font-family: "arial"; font-size: 12pt; text-align: left; padding-left: 2% }
+		P.white { font-family: "arial"; font-size: 12pt; text-align: left; color: #ffffff }
+		P.small { font-family: "arial"; font-size: 10pt; text-align: center }
+		LI { font-family: "arial"; font-size: 12pt; text-align: left }
+		H1 { font: 28pt "verdana", "helvatica", "arial"; text-align: left }
+		H2 { font: 24pt "verdana", "helvatica", "arial"; text-align: left }
+		H3 { font: 16pt "verdana", "helvatica", "arial"; text-align: left }
+		
+		ul.image
+  		{ display: block;
+    			margin: 0px;
+    			padding: 0px;
+  		}
+		li.image
+		  { display: block;
+		    list-style: none;
+		    float: left;
+		    margin: 0.25em;
+		    padding: 0px;
+		    border: solid 1px #115;
+		    background: #fff;
+		  }		
+		div.ul.image.li.p
+		  { text-align: center;
+		    margin: 0px;
+		    padding: 0.5em;
+		  }
+	</STYLE>
+</HEAD>
+<BODY BACKGROUND="back.jpg">
+
+<! heading>
+<H1> artoolkit </h1>
+
+<p>
+<img src="iam.jpg" width=150>
+ <p> patrick sinclair <br>
+<a href="http://www.iam.ecs.soton.ac.uk">Intelligence, Agents and Media Group</a><br>
+<a href="http://www.ecs.soton.ac.uk">Electronics and Computer Science</a><br>
+<a href="http://www.soton.ac.uk">University of Southampton</a>
+</p>
+
+<p>
+The ARToolkit library developed at the <a href="http://www.hitl.washington.edu/projects/shared_space/">
+University of Washington </a> is designed for the rapid development of Augmented Reality applications. It
+provides computer vision techniques to calculate a camera's position and orientation relative to marked cards
+so that virtual 3D objects can be overlaid precisely on the markers.
+</p>
+<p>
+The screen shots below should give a general idea of what is achievable with the ARToolkit.
+</p>
+
+<h3> how it works </h3>
+
+<p><i>[Note: this section is adapted from ARToolkit 2.33 Manual]</i></p>
+
+<div class="image">
+<ul class="image">
+<li class="image"><img src="step1.jpg"><p>Figure 1: Input Video</p></li>
+<li class="image"><img src="step2.jpg"><p>Figure 2: Thresholded Video</p></li>
+<li class="image"><img src="step3.jpg"><p>Figure 3: Virtual Overlay</p></li>
+</ul>
+</div>	
+
+<p>
+First the live video image <b>(Figure 1)</b> is turned into a binary (black or white) image based on a lighting threshold value <b>(Figure 2).</b> This image is then searched for square regions. ARToolKit finds all the squares in the binary image, many of which are not the tracking markers. For each square, the pattern inside the square is captured and matched again some pre-trained pattern templates. If there is a match, then ARToolKit has found one of the AR tracking markers. ARToolKit then uses the known square size and pattern orientation to calculate the position of the real video camera relative to the physical marker. A 3x4 matrix is filled in with the video camera real world coordinates relative to the card. This matrix is then used to set the position of the virtual camera coordinates. Since the virtual and real camera coordinates are the same, the computer graphics that are drawn precisely overlay the real marker <b>(Figure 3).</b> The OpenGL API is used for setting the virtual camera coordinates and drawing the virtual images.
+</p>
+
+<p> The diagram below shows the image processing used in ARToolKit in more detail. </p>
+
+<center><a href="diagram.jpg"><img src="diagram.jpg" width=600></a></center>
+
+<h3> overlaying simple objects </h3>
+
+<p class="small"><img src="objects1.jpg" width=150><br><b>Figure 4a: Cube</b></p>
+<p class="small"><img src="objects2.jpg" width=150><br><b>Figure 4b: Cone</b></p>
+<p class="small"><img src="objects3.jpg" width=150><br><b>Figure 4c: VRML object</b></p>
+<p class="small"><img src="objects4.jpg" width=150><br><b>Figure 4d: All together</b></p>
+
+<p>
+Objects being overlayed could be from OpenGL applications or VRML worlds. VRML is extremely useful as it can be generated from various 3D software packages, has animation and simple scripting for interactions between objects. As VRML is a text format, it is easy to generate VRML worlds dynamically in many ways.
+</p>
+
+<p>
+When an ARToolkit program is run, it is looking for a pre-defined set of markers. Each pre-defined marker is associated with it's own VRML file.
+</p>
+
+<p>
+The ARToolKit includes a program to create new markers which can then be associated with VRML files.
+</p>
+
+<h3> interactions between objects </h3>
+
+<p> <b>Figure 5</b> shows the IAM logo demonstration. There are three marker cards, each card holds one of the
+three AR jigsaw pieces on the IAM logo. Placing two cards next to each other in the correct order will join the
+two pieces. When all three are together in the correct order the three pieces join up.  </p>
+
+<p class="small"><img src="iam1.jpg" width=150>
+<p class="small"><img src="iam2.jpg" width=150>
+<p class="small"><img src="iam3.jpg" width=150>
+
+<p class="small"><b>Figure 5: Putting the IAM jig-saw together <a href="iam.mpg">(click for video)</a></b></p>
+
+<p> See the <a href="http://www.hitl.washington.edu/people/grof/Movies/witch.mov">"Virtual Object Interaction"</a> video on <a href="http://www.hitl.washington.edu/people/grof/"> Mark Billinghurst's home page</a> for another example. </p>
+
+<h3> overlaying information </h3>
+
+<p>
+This example shows how information could be presented to museum visitors about 3D artifacts. When they find an
+interesting object, they can just load it up on their card and look at it by holding it in their hand. They
+could ask for information on the object which would be tailored to their needs.
+</p>
+<center><img src="triplane.jpg"></center>
+<p class="small"><b>Figure 6: Triplane with labels over interesting regions</b><p>
+
+<h3> interactions using marker properties </h3>
+
+<p>
+These interactions show how a marker's properties such as it's position or orientation can be used. When the card is tilted down, the text scrolls down. When the card is tilted up, the text scrolls up.
+</p>
+
+<center><img src="text1.jpg"></center>
+<p class="small"><b>Figure 7: Textbox <a href="text.mpg">(click for video)</a></b><p>
+
+<p>
+This idea has been extended to paintings were the image can be scrolled horizontally as well as vertically.
+</p>
+
+<p class="small"><img src="art1.jpg" width=300>
+<p class="small"><img src="art2.jpg" width=300>
+<p class="small"><b>Figure 8: Image Panning <a href="art.mpg">(click for video)</a></b></p>
+
+<p>
+Objects could be made to slip off marker cards if the marker card is tilted.
+</p>
+
+<h3> advanced interactions </h3>
+
+<center><img src="vomar.jpg"></center>
+<p class="small"><b>Figure 9: Virtual Object Manipulation in Augmented Reality (VOMAR)</b></p>
+
+<p>
+A demonstration of the Virtual Object Manipulation in Augmented Reality (VOMAR) software was presented by Hirokazu Kato from Hiroshima University at ISAR 2000 (International Symposium on Augmented Reality). It introduces a "paddle" which can be used to interact with ARToolkit objects.
+</p>
+
+<p>
+Another demonstration was presented by Dr. Ivan Poupyrev and Desnet Tan in a collaboration between the HIT Lab, ATR, Hiroshima City University and DaimlerChrysler AG.users assemble a mock up of an aircraft dashboard using virtual instruments
+overlaid on real cards. 
+</p>
+
+<p>
+For more information on these demonstrations, see the ARToolkit <a href="http://www.hitl.washington.edu/people/grof/SharedSpace/Download/Oct5news.html"> news page </a>
+</p>
+
+
+<H3> for further information: </h3>
+<p> 
+<a href="http://web.archive.org/web/20050405221750/www.ecs.soton.ac.uk/~pass99r/research/">http://www.ecs.soton.ac.uk/~pass99r/research</a><br>
+<a href="http://www.hitl.washington.edu/projects/shared_space"> http://www.hitl.washington.edu/projects/shared_space </a></p>
+
+<p>Patrick Sinclair, 2001</p>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2064050-1";
+urchinTracker();
+</script>
+</BODY>
+</HTML>
