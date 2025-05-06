@@ -1,6 +1,4 @@
 
 ## Deploy
 
-Using `mgd` to push to Github pages.
-
-See https://github.com/hovancik/middleman-github-deploy
+Using a github action to deploy - just `git push master` and it should work! 🤞
