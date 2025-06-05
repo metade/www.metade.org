@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Exposing AllegroGraph as a Joseki SPARQL end-point</title>
+    <meta name="author" content="Patrick Sinclair">
+
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/all.js"></script>
+  </head>
+
+  <body class="blog blog_exposing-allegrograph-as-a-joseki-sparql-end-point blog_exposing-allegrograph-as-a-joseki-sparql-end-point_index">
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item navbar-logo">
+            <a class="navbar-link" href="/">Patrick Sinclair</a>
+          </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="/blog/">blog</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+          <article>
+    <h1>Exposing AllegroGraph as a Joseki SPARQL end-point</h1>
+    <h3><span>April 18 2007</span></h3>
+
+    <p>Back when I was <a href="http://metade.org/research.html#Sculpteur">working</a> on the <a href="http://www.sculpteurweb.org">Sculpteur</a> project, we had real issues with semantic web triple store performance, in particular in regards to the amount of data they could handle.</p>
+
+<p>So we took a more traditional relational database/Z39.50 SRW approach, finally resulting in the <a href="http://openmks.sourceforge.net">OpenMKS</a> system.</p>
+
+<p>So it’s great to see how far triple stores have come: the <a href="http://www.franz.com/products/allegrograph/">AllegroGraph</a> triple store server from <a href="http://www.franz.com/">Franz Inc.</a> can  handle billions of triples. They offer a free version that supports up to 50 million triples - that’s a lot of data! For example, the <a href="http://e-culture.multimedian.nl/">E-Culture</a> demonstrator (part of the <a href="http://www.multimedian.nl">Multimedian</a> project in the Netherlands) incorporates a number of cultural heritage vocabularies/thesauri, Wordnet and three museum/archive collections and takes up only 9 million triples (according to this <a href="http://www.cs.vu.nl/~guus/papers/Schreiber06a.pdf">paper by Schreiber et al.</a>).</p>
+
+<p>So I’ve been experimenting with AllegroGraph, in particular so it can act as a back-end to an <a href="http://www.mspace.fm">mSpace</a> interface. Although AllegroGraph supports SPARQL queries, it doesn’t expose an HTTP SPARQL endpoint (at least I couldn’t find one!).</p>
+
+<p>Here’s how I went about exposing AllegroGraph through a Joseki SPARQL endpoint. It’s not the most efficient way of doing it, but it was the easiest to implement and it works!</p>
+
+<p>AllegroGraph provides a Jena layer, so inspired by the <a href="http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/">D2R server</a> code, I created a Jena Assembler for the AllegroGraph Jena graph. With this, you can then set up a Joseki data set:</p>
+
+<p><code>_:allegro   rdf:type ja:RDFDataset ;     rdfs:label "Allegro" ;     ja:defaultGraph        [ rdfs:label "Allegro Graph" ;         a ag:AllegroModel ; ag:modelName "test"; # the name of the AllegroGraph model name ag:modelLocation "/tmp/ag/"; # the location of the AllegroGraph model       ] ;       .  ag:AllegroModel     rdfs:subClassOf ja:Object;     ja:assembler "org.metade.allegrograph.AllegroGraphAssembler";     .</code></p>
+
+<p>I’ve assembled a <a href="http://metade.org/blog/wp-content/uploads/2007/04/allegrograph.zip" title="AllegroGraph - Joseki bridge">Maven project with the code which you can download</a>, maybe it’ll be of use to someone. Give me a shout if you need help getting it going.</p>
+
+<p>Now I mentioned that this isn’t the best approach. We’ve done some basic testing on it, and although it manages to cope with some complex queries far better than other systems we’ve tried, it can be slow on others. There is a lot of overhead in this approach. From the top of my head (i.e. this might not be very accurate!) each SPARQL query goes through:
+-  Jena ARQ SPARQL library
+-  Jena graph model
+-  AllegroGraph Jena wrapper
+-  AllegroGraph Java layer
+-  AllegroGraph native store</p>
+
+<p>But it works…</p>
+
+<p>In terms of future work, AllegroGraph supports SPARQL queries directly so we’re planning on developing the SPARQL endpoint that talks to this directly. It will be interesting to compare the two approaches, but my guess is that the direct SPARQL queries will be a lot faster.</p>
+
+  </article>
+
+
+  <aside>
+    <h2>Recent</h2>
+    <ol>
+        <li>
+          <a href="/blog/young-rewired-state-2015/">Young Rewired State 2015</a>
+          <span>August  6 2015</span>
+        </li>
+        <li>
+          <a href="/blog/leaving-the-bbc/">Leaving the BBC</a>
+          <span>January 14 2013</span>
+        </li>
+        <li>
+          <a href="/blog/screecha-our-music-hack-day-2012-project/">Screecha - our Music Hack Day 2012 project</a>
+          <span>November 26 2012</span>
+        </li>
+        <li>
+          <a href="/blog/buy-a-brick/">Buy a brick </a>
+          <span>March  3 2012</span>
+        </li>
+        <li>
+          <a href="/blog/the-new-radio-1-and-1xtra-homepages/">The new BBC Radio 1 and 1Xtra homepages</a>
+          <span>October  5 2011</span>
+        </li>
+        <li>
+          <a href="/blog/young-rewired-state-2011/">Young Rewired State 2011</a>
+          <span>August 25 2011</span>
+        </li>
+        <li>
+          <a href="/blog/its-been-a-while/">It's been a while</a>
+          <span>August  2 2011</span>
+        </li>
+        <li>
+          <a href="/blog/my-saidfm-radio-box-hack/">My Said.fm Radio Box Hack</a>
+          <span>April 19 2011</span>
+        </li>
+        <li>
+          <a href="/blog/im-at-the-guardian-south-by-south-west-hack-d/">I'm at the Guardian South by South West Hack Day</a>
+          <span>February 12 2011</span>
+        </li>
+        <li>
+          <a href="/blog/we-need-social-innovation-camp/">We Need @ Social Innovation Camp</a>
+          <span>December  9 2008</span>
+        </li>
+    </ol>
+
+    <h2>Tags</h2>
+    <ol>
+        <li><a href="/blog/tags/youngrewiredstate/">youngrewiredstate (2)</a></li>
+        <li><a href="/blog/tags/bbc/">bbc (6)</a></li>
+        <li><a href="/blog/tags/music/">music (4)</a></li>
+        <li><a href="/blog/tags/musichackday/">musichackday (1)</a></li>
+        <li><a href="/blog/tags/sewingmachine/">sewingmachine (1)</a></li>
+        <li><a href="/blog/tags/soundcloud/">soundcloud (1)</a></li>
+        <li><a href="/blog/tags/spotify/">spotify (1)</a></li>
+        <li><a href="/blog/tags/charity/">charity (1)</a></li>
+        <li><a href="/blog/tags/childsi/">childsi (1)</a></li>
+        <li><a href="/blog/tags/musicbrainz/">musicbrainz (4)</a></li>
+        <li><a href="/blog/tags/radio1/">radio1 (1)</a></li>
+        <li><a href="/blog/tags/code/">code (9)</a></li>
+        <li><a href="/blog/tags/yrs2011/">yrs2011 (1)</a></li>
+        <li><a href="/blog/tags/sicamp/">sicamp (1)</a></li>
+        <li><a href="/blog/tags/css/">css (1)</a></li>
+        <li><a href="/blog/tags/regression-testing/">regression testing (1)</a></li>
+        <li><a href="/blog/tags/test-driven-development/">test driven development (1)</a></li>
+        <li><a href="/blog/tags/iswc2008/">iswc2008 (1)</a></li>
+        <li><a href="/blog/tags/mashed2008/">mashed2008 (2)</a></li>
+        <li><a href="/blog/tags/augmented-reality/">augmented reality (1)</a></li>
+        <li><a href="/blog/tags/hackdaylondon/">hackdaylondon (2)</a></li>
+        <li><a href="/blog/tags/presentation/">presentation (3)</a></li>
+        <li><a href="/blog/tags/semweb/">semweb (4)</a></li>
+        <li><a href="/blog/tags/image-retrieval/">image retrieval (1)</a></li>
+        <li><a href="/blog/tags/sparql/">sparql (1)</a></li>
+    </ol>
+
+    <h2>By Year</h2>
+    <ol>
+        <li><a href="/blog/2015/">2015 (1)</a></li>
+        <li><a href="/blog/2013/">2013 (1)</a></li>
+        <li><a href="/blog/2012/">2012 (2)</a></li>
+        <li><a href="/blog/2011/">2011 (5)</a></li>
+        <li><a href="/blog/2008/">2008 (7)</a></li>
+        <li><a href="/blog/2007/">2007 (10)</a></li>
+    </ol>
+  </aside>
+
+    </div>
+    <footer>
+      <div class="container" itemscope itemtype="http://schema.org/Person">
+        <link itemprop="url" href="http://www.metade.org">
+        <ul class="social-list">
+          <li><a itemprop="sameAs" class="twitter" href="http://twitter.com/metade" title="Twitter">Twitter</a></li>
+          <li><a itemprop="sameAs" class="github" href="https://github.com/metade" title="GitHub">GitHub</a></li>
+          <li><a itemprop="sameAs" class="linkedin" href="http://www.linkedin.com/in/metade">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2064050-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

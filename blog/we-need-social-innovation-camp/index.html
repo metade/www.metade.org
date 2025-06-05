@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>We Need @ Social Innovation Camp</title>
+    <meta name="author" content="Patrick Sinclair">
+
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/all.js"></script>
+  </head>
+
+  <body class="blog blog_we-need-social-innovation-camp blog_we-need-social-innovation-camp_index">
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item navbar-logo">
+            <a class="navbar-link" href="/">Patrick Sinclair</a>
+          </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="/blog/">blog</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+          <article>
+    <h1>We Need @ Social Innovation Camp</h1>
+    <h3><span>December  9 2008</span></h3>
+
+    <p>This weekend I attended <a href="http://www.sicamp.org/">Social Innovation Camp</a>, (SICamp) where I had an absolutely fantastic time! SICamp is an experiment to bring together people over a weekend and get them to build/prototype web apps that will drive social change - check out what the Guardian had to say about it on <a href="http://www.guardian.co.uk/media/pda/2008/dec/06/socialinnovationcamp-startups">Saturday</a> and then on <a href="http://www.guardian.co.uk/media/pda/2008/dec/07/socialinnovationcamp-events">Sunday after the projects were presented</a>.</p>
+
+<p>I worked on the <a href="http://www.we-need.org/">we-need.org</a> project, which was led by Craig Griffin from <a href="http://www.fresh-voice.com/">Fresh Voice</a>. The idea is to provide a web site where people with disabilities are able to express their needs through an accessible web interface rather than having their needs assessed by the system as it is currently (i.e. by filling in a 50-odd page form). The site would then aggregate and present interactive visualisations of the needs in a given community so they can be more efficiently handled. Hopefully the video of the pitch we presented on Sunday will be made available online soon, where our team explained the concept far better than I can!</p>
+
+<p>For the weekend, we built a Ruby on Rails application where users could use a <a href="http://metade.org/code/weneed/edit.html">basic html form</a> to express their needs. We also experimented with a graphical radial interface which is better suited for people with certain types of disabilities. We used the Geokit Rails plugin to geocode users’ addresses so that their needs could be plotted on a map. We used <a href="http://simile.mit.edu/exhibit/">Simile Exhibit</a> to prototype the <a href="http://metade.org/code/weneed">visualisation of the aggregated needs of communities on a map</a>.</p>
+
+<p>As mentioned during the project presentation, we required some sample data so I put together some Ruby to randomly generate some users and their needs. So here is the infamous Ruby “random needs generator” one-liner:</p>
+
+<p><code>(0..rand(3)).to_a.map { |a| rand(@@need_count)+1 }.uniq</code></p>
+
+<p>I’ve bravely put all of the <a href="http://github.com/metade/weneed">we-need code on github</a>, but do keep in mind that it was all built in less than 24 hours!</p>
+
+<p>I had a really amazing time, worked with some fantastic people on We Need and also really enjoyed the post-SICamp discussions in the pub on Sunday! Big thanks to the <a href="http://www.sicamp.org/?page_id=158">SICamp team</a> for organising everything - I’m already looking forward to the next SICamp meetup!</p>
+
+  </article>
+
+
+  <aside>
+    <h2>Recent</h2>
+    <ol>
+        <li>
+          <a href="/blog/young-rewired-state-2015/">Young Rewired State 2015</a>
+          <span>August  6 2015</span>
+        </li>
+        <li>
+          <a href="/blog/leaving-the-bbc/">Leaving the BBC</a>
+          <span>January 14 2013</span>
+        </li>
+        <li>
+          <a href="/blog/screecha-our-music-hack-day-2012-project/">Screecha - our Music Hack Day 2012 project</a>
+          <span>November 26 2012</span>
+        </li>
+        <li>
+          <a href="/blog/buy-a-brick/">Buy a brick </a>
+          <span>March  3 2012</span>
+        </li>
+        <li>
+          <a href="/blog/the-new-radio-1-and-1xtra-homepages/">The new BBC Radio 1 and 1Xtra homepages</a>
+          <span>October  5 2011</span>
+        </li>
+        <li>
+          <a href="/blog/young-rewired-state-2011/">Young Rewired State 2011</a>
+          <span>August 25 2011</span>
+        </li>
+        <li>
+          <a href="/blog/its-been-a-while/">It's been a while</a>
+          <span>August  2 2011</span>
+        </li>
+        <li>
+          <a href="/blog/my-saidfm-radio-box-hack/">My Said.fm Radio Box Hack</a>
+          <span>April 19 2011</span>
+        </li>
+        <li>
+          <a href="/blog/im-at-the-guardian-south-by-south-west-hack-d/">I'm at the Guardian South by South West Hack Day</a>
+          <span>February 12 2011</span>
+        </li>
+        <li>
+          <a href="/blog/we-need-social-innovation-camp/">We Need @ Social Innovation Camp</a>
+          <span>December  9 2008</span>
+        </li>
+    </ol>
+
+    <h2>Tags</h2>
+    <ol>
+        <li><a href="/blog/tags/youngrewiredstate/">youngrewiredstate (2)</a></li>
+        <li><a href="/blog/tags/bbc/">bbc (6)</a></li>
+        <li><a href="/blog/tags/music/">music (4)</a></li>
+        <li><a href="/blog/tags/musichackday/">musichackday (1)</a></li>
+        <li><a href="/blog/tags/sewingmachine/">sewingmachine (1)</a></li>
+        <li><a href="/blog/tags/soundcloud/">soundcloud (1)</a></li>
+        <li><a href="/blog/tags/spotify/">spotify (1)</a></li>
+        <li><a href="/blog/tags/charity/">charity (1)</a></li>
+        <li><a href="/blog/tags/childsi/">childsi (1)</a></li>
+        <li><a href="/blog/tags/musicbrainz/">musicbrainz (4)</a></li>
+        <li><a href="/blog/tags/radio1/">radio1 (1)</a></li>
+        <li><a href="/blog/tags/code/">code (9)</a></li>
+        <li><a href="/blog/tags/yrs2011/">yrs2011 (1)</a></li>
+        <li><a href="/blog/tags/sicamp/">sicamp (1)</a></li>
+        <li><a href="/blog/tags/css/">css (1)</a></li>
+        <li><a href="/blog/tags/regression-testing/">regression testing (1)</a></li>
+        <li><a href="/blog/tags/test-driven-development/">test driven development (1)</a></li>
+        <li><a href="/blog/tags/iswc2008/">iswc2008 (1)</a></li>
+        <li><a href="/blog/tags/mashed2008/">mashed2008 (2)</a></li>
+        <li><a href="/blog/tags/augmented-reality/">augmented reality (1)</a></li>
+        <li><a href="/blog/tags/hackdaylondon/">hackdaylondon (2)</a></li>
+        <li><a href="/blog/tags/presentation/">presentation (3)</a></li>
+        <li><a href="/blog/tags/semweb/">semweb (4)</a></li>
+        <li><a href="/blog/tags/image-retrieval/">image retrieval (1)</a></li>
+        <li><a href="/blog/tags/sparql/">sparql (1)</a></li>
+    </ol>
+
+    <h2>By Year</h2>
+    <ol>
+        <li><a href="/blog/2015/">2015 (1)</a></li>
+        <li><a href="/blog/2013/">2013 (1)</a></li>
+        <li><a href="/blog/2012/">2012 (2)</a></li>
+        <li><a href="/blog/2011/">2011 (5)</a></li>
+        <li><a href="/blog/2008/">2008 (7)</a></li>
+        <li><a href="/blog/2007/">2007 (10)</a></li>
+    </ol>
+  </aside>
+
+    </div>
+    <footer>
+      <div class="container" itemscope itemtype="http://schema.org/Person">
+        <link itemprop="url" href="http://www.metade.org">
+        <ul class="social-list">
+          <li><a itemprop="sameAs" class="twitter" href="http://twitter.com/metade" title="Twitter">Twitter</a></li>
+          <li><a itemprop="sameAs" class="github" href="https://github.com/metade" title="GitHub">GitHub</a></li>
+          <li><a itemprop="sameAs" class="linkedin" href="http://www.linkedin.com/in/metade">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2064050-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

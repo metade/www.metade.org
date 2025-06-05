@@ -1,0 +1,31 @@
+ metade@gmail.com https://www.metade.org
+  Patrick Sinclair
+Technical Lead — Team Lead — Principal Software Engineer
+Experience
+2024-current — Engineering Team Lead Remote
+Remote is an HR platform that provides payroll and other services to companies with distributed workforces. I have been leading a team of backend engineers delivering integrations with payroll service providers. As well as providing technical leadership and managing a fully remote async- first team, I have been hands on delivering product development in a Elixir Phoenix app that makes heavy use of Oban background jobs.
+2020-2024 — Senior Engineer/Technical Lead/Principal Engineer Streetbees
+Streetbees is a mobile-based market research platform that uses AI to deliver rich real-time consumer insights. I took on a number of roles, from getting my hands dirty as a senior engineer, leading product teams and driving new product development as a principal engineer. I have been mainly working in Ruby on Rails and some Python.
+2016-2020 — CTO GoodGym
+GoodGym is a charity that connects a community of runners that get fit by doing good. I led a small technology team developing the volunteering platform built in Ruby on Rails that enabled thousands of runners to complete hundreds of thousands of good deeds. At the time the platform supported 50+ locations and over 18,000 runners who collectively completed 180,000 good deeds - which was achieved without needing to scale the operations team.
+2014-2016 — Technical Lead Lostmy.name (now Wonderbly)
+Lostmy.name is a personalised children's book company where each book is rendered and printed on demand. I led the development of the Ruby on Rails e-commerce platform (Spree/ Solidus) which sold over 1.5 million books in 2 years. Having joined early on, I helped grow the engineering team to over 20 developers.
+2013-2014 — Technical Lead Sidekick Studios
+Technical lead on several client projects, including Which? Birth Choice.
+2007-2013 — Software Engineer/Senior Software Engineer/Principal Engineer BBC Worked on projects in BBC Music and Radio (e.g., BBC Music, Radio 1/1Xtra, Glastonbury, iPlayer Radio). Starting as a software engineer (Ruby on Rails, Perl, PHP), I grew into a technical lead of our product teams and as a principal engineer I contributed to the software development processes within our group and helped shape new product development. I also spent a fun year on attachment with the Radio 1/1Xtra Interactive team.
+2003-2007 — Research Assistant/Fellow University of Southampton
+Research using semantic web to integrate cultural heritage institutions’ multimedia collections.
+
+ Education
+1999-2004 — Ph.D. Computer Science University of Southampton
+Integrating Hypermedia Techniques with Augmented Reality Environments
+My research focused on incorporating open hypermedia techniques in augmented reality environments, and developing tangible augmented reality interaction metaphors for navigating complex information spaces in a natural and intuitive way.
+1996-1999 — B.Sc. Computer Science [2.1] University of Southampton Technical Skills
+Ruby, Ruby on Rails, Sinatra ,TDD, Rspec, Cucumber - Elixir, Phoenix
+Web Development and Web Services - HTML/CSS/Javascript - APIs/REST web services Heroku - AWS
+Postgres, MySQL, Redis
+Message queuing technologies (Sidekiq, SQS, Kafka, Oban)
+Experience using Unix (OS X, Linux)
+Other Interests
+Running— I have participated in many races, ranging from 5km to a 50 miles ultra marathon Cycling — A regular cyclist, I have cycled across Britain and done a few triathlons
+Samba — I have performed with the London School of Samba at events like Notting Hill Carnival
